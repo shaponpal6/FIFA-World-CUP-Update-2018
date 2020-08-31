@@ -1,0 +1,1498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg10"
+        android:columnCount="2">
+
+        <!--Group A-->
+       <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="16dp"
+            card_view:cardBackgroundColor="#eff"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="2dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Group Name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:weightSum="33"
+                android:background="@color/lightGreen"
+                android:onClick="fifaGroup"
+                android:tag="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="32"
+                    android:padding="3dp"
+                    android:drawableLeft="@drawable/football_icon"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"
+                    android:textColor="#333"
+                    android:textSize="18sp"
+                    android:text="Group A" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:padding="3dp"
+                    android:src="@drawable/data_table"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+                <!--First 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="2">
+                    <!--Item 1-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/egypt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Egypt"
+                            android:textColor="#333"
+                            android:textSize="16dp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+                    <!--Item 2-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/russia" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="16dp"
+                            android:text="Russia" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Second 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:weightSum="2">
+                    <!--Item 3-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/saudi_arabia" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="12dp"
+                            android:text="Saudi Arabia" />
+                    </LinearLayout>
+                    <!--Item 4-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/uruguay" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="16dp"
+                            android:text="Uruguay"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Group B-->
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="16dp"
+            card_view:cardBackgroundColor="#eff"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="2dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Group Name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="33"
+                    android:background="@color/lightGreen"
+                    android:onClick="fifaGroup"
+                    android:tag="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="32"
+                        android:padding="3dp"
+                        android:drawableLeft="@drawable/football_icon"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:textColor="#333"
+                        android:textSize="18sp"
+                        android:text="Group B" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:padding="3dp"
+                        android:src="@drawable/data_table"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <!--First 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="2">
+                    <!--Item 1-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/iran" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Iran"
+                            android:textColor="#333"
+                            android:textSize="16dp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+                    <!--Item 2-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/morocco" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="16dp"
+                            android:text="Morocco" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Second 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:weightSum="2">
+                    <!--Item 3-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/portugal" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="12dp"
+                            android:text="Portugal" />
+                    </LinearLayout>
+                    <!--Item 4-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/spain" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="16dp"
+                            android:text="Spain"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Group C-->
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="16dp"
+            card_view:cardBackgroundColor="#eff"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="2dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Group Name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="33"
+                    android:background="@color/lightGreen"
+                    android:onClick="fifaGroup"
+                    android:tag="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="32"
+                        android:padding="3dp"
+                        android:drawableLeft="@drawable/football_icon"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:textColor="#333"
+                        android:textSize="18sp"
+                        android:text="Group C" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:padding="3dp"
+                        android:src="@drawable/data_table"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <!--First 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="2">
+                    <!--Item 1-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/australia" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Australia"
+                            android:textColor="#333"
+                            android:textSize="16dp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+                    <!--Item 2-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/denmark" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="16dp"
+                            android:text="Denmark" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Second 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:weightSum="2">
+                    <!--Item 3-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/france" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="12dp"
+                            android:text="France" />
+                    </LinearLayout>
+                    <!--Item 4-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/peru" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="16dp"
+                            android:text="Peru"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!--Group D-->
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="16dp"
+            card_view:cardBackgroundColor="#eff"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="2dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Group Name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="33"
+                    android:background="@color/lightGreen"
+                    android:onClick="fifaGroup"
+                    android:tag="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="32"
+                        android:padding="3dp"
+                        android:drawableLeft="@drawable/football_icon"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:textColor="#333"
+                        android:textSize="18sp"
+                        android:text="Group D" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:padding="3dp"
+                        android:src="@drawable/data_table"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <!--First 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="2">
+                    <!--Item 1-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/argentina" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Argentina"
+                            android:textColor="#333"
+                            android:textSize="16dp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+                    <!--Item 2-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/croatia" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="16dp"
+                            android:text="Croatia" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Second 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:weightSum="2">
+                    <!--Item 3-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/iceland" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="12dp"
+                            android:text="Iceland" />
+                    </LinearLayout>
+                    <!--Item 4-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/nigeria" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="16dp"
+                            android:text="Nigeria"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Group E-->
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="16dp"
+            card_view:cardBackgroundColor="#eff"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="2dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Group Name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="33"
+                    android:background="@color/lightGreen"
+                    android:onClick="fifaGroup"
+                    android:tag="e">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="32"
+                        android:padding="3dp"
+                        android:drawableLeft="@drawable/football_icon"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:textColor="#333"
+                        android:textSize="18sp"
+                        android:text="Group E" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:padding="3dp"
+                        android:src="@drawable/data_table"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <!--First 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="2">
+                    <!--Item 1-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/brazil" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Brazil"
+                            android:textColor="#333"
+                            android:textSize="16dp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+                    <!--Item 2-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/costa_rica" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="16dp"
+                            android:text="Costa Rica" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Second 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:weightSum="2">
+                    <!--Item 3-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/serbia" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="16dp"
+                            android:text="Serbia" />
+                    </LinearLayout>
+                    <!--Item 4-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/switzerland" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="16dp"
+                            android:text="Switzerland"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Group F-->
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="16dp"
+            card_view:cardBackgroundColor="#eff"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="2dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Group Name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="33"
+                    android:background="@color/lightGreen"
+                    android:onClick="fifaGroup"
+                    android:tag="f">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="32"
+                        android:padding="3dp"
+                        android:drawableLeft="@drawable/football_icon"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:textColor="#333"
+                        android:textSize="18sp"
+                        android:text="Group F" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:padding="3dp"
+                        android:src="@drawable/data_table"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <!--First 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="2">
+                    <!--Item 1-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/germany" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Germany"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                    <!--Item 2-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/south_korea" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp"
+                            android:text="South Korea" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Second 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:weightSum="2">
+                    <!--Item 3-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/mexico" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp"
+                            android:text="Mexico" />
+                    </LinearLayout>
+                    <!--Item 4-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/sweden" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp"
+                            android:text="Sweden"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!--Group G-->
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="16dp"
+            card_view:cardBackgroundColor="#eff"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="2dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Group Name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="33"
+                    android:background="@color/lightGreen"
+                    android:onClick="fifaGroup"
+                    android:tag="g">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="32"
+                        android:padding="3dp"
+                        android:drawableLeft="@drawable/football_icon"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:textColor="#333"
+                        android:textSize="18sp"
+                        android:text="Group G" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:padding="3dp"
+                        android:src="@drawable/data_table"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <!--First 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="2">
+                    <!--Item 1-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/belgium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Belgium"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                    <!--Item 2-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/england" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp"
+                            android:text="England" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Second 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:weightSum="2">
+                    <!--Item 3-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/panama" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp"
+                            android:text="Panama" />
+                    </LinearLayout>
+                    <!--Item 4-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/tunisia" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp"
+                            android:text="Tunisia"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Group H-->
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="16dp"
+            card_view:cardBackgroundColor="#eff"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="2dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Group Name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="33"
+                    android:background="@color/lightGreen"
+                    android:onClick="fifaGroup"
+                    android:tag="h">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="32"
+                        android:padding="3dp"
+                        android:drawableLeft="@drawable/football_icon"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:textColor="#333"
+                        android:textSize="18sp"
+                        android:text="Group H" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:padding="3dp"
+                        android:src="@drawable/data_table"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <!--First 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="2">
+                    <!--Item 1-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/colombia" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Colombia"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                    <!--Item 2-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/japan" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp"
+                            android:text="Japan" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Second 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:weightSum="2">
+                    <!--Item 3-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/poland" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp"
+                            android:text="Poland" />
+                    </LinearLayout>
+                    <!--Item 4-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/senegal" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp"
+                            android:text="Senegal"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Group H-->
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="16dp"
+            card_view:cardBackgroundColor="#eff"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="2dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Group Name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="33"
+                    android:background="@color/lightGreen"
+                    android:onClick="fifaGroup"
+                    android:tag="h">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="32"
+                        android:padding="3dp"
+                        android:drawableLeft="@drawable/football_icon"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:textColor="#333"
+                        android:textSize="18sp"
+                        android:text="Group H" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:padding="3dp"
+                        android:src="@drawable/data_table"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <!--First 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="2">
+                    <!--Item 1-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/colombia" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Colombia"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                    <!--Item 2-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/japan" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp"
+                            android:text="Japan" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Second 2 Column-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:weightSum="2">
+                    <!--Item 3-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/poland" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp"
+                            android:text="Poland" />
+                    </LinearLayout>
+                    <!--Item 4-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="fifaTeam"
+                        android:tag="1">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/senegal" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp"
+                            android:text="Senegal"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </GridLayout>
+
+</ScrollView>

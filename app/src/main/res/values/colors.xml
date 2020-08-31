@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue">#0F5A8E</color>
+    <color name="lightGreen">#39e962</color>
+    <color name="deepBlue">#0F5A8E</color>
+    <color name="black">#000000</color>
+    <color name="richBlack">#04151F</color>
+    <color name="lightBlack">#33AEC4</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#D1D1D1</color>
+    <color name="blueGreen">#33AEC4</color>
+    <color name="pink">#ED2AA5</color>
+    <color name="hotPink">#F164BD</color>
+    <color name="megenta">#F050B5</color>
+    <color name="deepPink">#82175A</color>
+    <color name="lightSinopia">#D96E4C</color>
+    <color name="deepSinopia">#701F05</color>
+    <color name="sinopia">#CC3809</color>
+    <color name="lightPrune">#A56771</color>
+    <color name="deepPrune">#530D19</color>
+    <color name="prune">#721121</color>
+    <color name="prune1">#7E2635</color>
+
+</resources>
